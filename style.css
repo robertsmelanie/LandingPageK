@@ -16,13 +16,34 @@
   margin: 0 15px;
   font-size: 18px;
 }
+body {
+  background-image: url("bkg1.png");
+  background-size: cover; /* Covers the entire page */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+}
 img {
   width: 100%;
   height: auto;
 }
 body {
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
 }
+.container {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+}
+
 /* Flexbox: */
 #header {
   display: flex;
