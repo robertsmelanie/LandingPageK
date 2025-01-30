@@ -35,6 +35,7 @@ body {
   align-items: center; /* Centers vertically */
   height: 100vh; /* Full viewport height */
   margin: 0;
+  padding-top: 380px;
 }
 .container {
   background-color: aliceblue;
