@@ -24,17 +24,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
- 
-    
+  
   }
-  /* body {
-    background-image: url("bkg1.png");
-    background-size: cover; /* Covers the entire page */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
-  } */
+ 
   .image-container {
     background-color: black;
   }
@@ -88,28 +80,8 @@
     height: auto;
 
   }
-  /* Hide the checkbox */
-#background-toggle {
-    display: none;
-  }
-  
-  /* Style the label as a button */
-  label[for="background-toggle"] {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 10px;
-  }
-  
-  /* Default body background */
-  body {
-    background-color: black;
-    transition: background 0.5s;
-  }
-  
+
+    
   /* Apply background image when checkbox is checked */
   #background-toggle:checked ~ * {
     background: url('bkg1.png') no-repeat center center fixed;
@@ -133,7 +105,7 @@
   
   /* Default body background */
   body {
-    background-color: black;
+    background-color: maroon;
     transition: background 0.5s;
   }
   
