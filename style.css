@@ -1,88 +1,132 @@
 #nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.nav-link {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
-}
-body {
-  background-image: url("bkg1.png");
-  background-size: cover; /* Covers the entire page */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Keeps the image fixed while scrolling */
-}
-img {
-  width: 50%;
-  height: auto;
-}
-body {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Full viewport height */
-  margin: 0;
-  padding-top: 380px;
-}
-.container {
-  background-color: aliceblue;
-  padding: 20px;
-  border-radius: 8px;
-  width: 50%;
-  text-align: center;
-}
-
-/* Flexbox: */
-#header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Video Section */
-#video-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-#section4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* Media Query */
-@media (max-width: 600px) {
-  #nav-bar {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   .nav-link {
-    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
   }
-
+  .nav-link:hover {
+    text-decoration: underline;
+  }
   #header-img {
-    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+ 
+    
   }
-}
+  /* body {
+    background-image: url("bkg1.png");
+    background-size: cover; /* Covers the entire page */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  } */
+  .image-container {
+    background-color: black;
+  }
+  .container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+  #section1 {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+  }
+  #section2 {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+  }
+  #section3 {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+  }
+  #section1 #section2 #section3 #section4 {
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+  }
+  /* Hide the checkbox */
+#background-toggle {
+    display: none;
+  }
+  
+  /* Style the label as a button */
+  label[for="background-toggle"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  /* Default body background */
+  body {
+    background-color: black;
+    transition: background 0.5s;
+  }
+  
+  /* Apply background image when checkbox is checked */
+  #background-toggle:checked ~ * {
+    background: url('bkg1.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  /* Hide the checkbox */
+#background-toggle {
+    display: none;
+  }
+  
+  /* Style the label as a button */
+  label[for="background-toggle"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  /* Default body background */
+  body {
+    background-color: black;
+    transition: background 0.5s;
+  }
+  
+  /* Apply background image when checkbox is checked */
+  #background-toggle:checked ~ * {
+    background: url('bkg1.png') no-repeat center center fixed;
+
+    background-size: cover; /* Covers the entire page */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  }
