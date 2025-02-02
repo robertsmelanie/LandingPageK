@@ -1,7 +1,7 @@
 #nav-bar {
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
     width: 100%;
     background-color: #333;
     padding: 10px 0;
@@ -46,7 +46,7 @@
   }
   #section1 {
     background-color: aliceblue;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     width: 50%;
     text-align: center;
@@ -129,4 +129,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  }
+  h2 {
+    text-align: center;
+  }
+  .image-container2 {
+   
   }
